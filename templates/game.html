@@ -1,0 +1,27 @@
+<!-- templates/game.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>My Web Board Game</title>
+  <!-- Link your main styles here -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+  <h1>My Web Board Game</h1>
+
+  <!-- Move the status to the top, below the heading -->
+  <div id="status" class="status-top"></div>
+
+  <!-- The board goes here -->
+  <div id="board-container"></div>
+
+  <!-- Place the "Play Again" button below the board -->
+  <div class="controls">
+    <button id="play-again" class="play-again-btn">Play Again</button>
+  </div>
+
+  <!-- JavaScript for the game -->
+  <script src="{{ url_for('static', filename='js/main.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!-- templates/home.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Welcome to My Board Game</title>
+  <!-- Link to your new home.css file in static/css/ -->
+  <link rel="stylesheet" href="{{ url_for('static', filename='css/home.css') }}">
+</head>
+<body>
+  <div class="container">
+    <h1>Welcome to the Overflow Board Game</h1>
+
+    <div class="info-section">
+      <h2>Game Objective</h2>
+      <p>
+        Control the entire board by placing gems and causing them to overflow
+        into neighboring cells. If you manage to turn every cell on the board
+        into your color, you win!
+      </p>
+
+      <h2>How to Play</h2>
+      <ol>
+        <li><strong>Placement:</strong> On your turn, place a gem on an empty cell or one that already belongs to you.</li>
+        <li><strong>Overflow Mechanic:</strong> If the number of gems in a cell reaches the number of the direct neighboors that cell has, the cell overflows and the gems spread to adjacent cells, flipping their ownership to your color.</li>
+        <li><strong>AI Opponent:</strong> Our built-in AI will automatically place gems for the opposing player. Keep an eye on its moves!</li>
+        <li><strong>Winning Condition:</strong> The game ends when the entire board is controlled by a single color.</li>
+      </ol>
+
+      <h2>Ready to Play?</h2>
+      <p>Click the button below to start the game and see if you can outsmart the AI!</p>
+    </div>
+
+    <button onclick="window.location.href='/play'">Play Game</button>
+  </div>
+</body>
+</html>

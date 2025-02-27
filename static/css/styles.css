@@ -1,0 +1,78 @@
+/* A little styling to make the page look nicer */
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #f5f5f5;
+    font-family: sans-serif;
+}
+  
+h1 {
+    text-align: center;
+    margin: 10px 0 10px 0;
+}
+  
+#board-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+  
+/* Board Table */
+table {
+    border-collapse: collapse;
+}
+  
+/* Each cell in the board */
+td {
+    width: 100px;
+    height: 100px;
+    border: 2px solid #333;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-color: #fff;
+    position: relative; /* allows positioning elements inside if needed */
+}
+  
+td:hover {
+    background-color: #ddd;
+}
+  
+/* Status message below the board */
+#status {
+    text-align: center;
+    margin-top: 0px;
+    font-size: 1.2em;
+}
+
+/* Position the status message at the top, centered, with a bit of margin */
+.status-top {
+    text-align: center;
+    margin: 0px 0;
+    font-size: 1.2em;
+    color: #444;
+}
+  
+/* Container for any control buttons below the board */
+.controls {
+    text-align: center;
+    margin-top: 10px;
+}
+  
+/* Style the "Play Again" button */
+.play-again-btn {
+    background: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 1em;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+  
+.play-again-btn:hover {
+    background: #0056b3;
+}
+  
